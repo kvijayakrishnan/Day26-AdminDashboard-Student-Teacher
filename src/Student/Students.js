@@ -18,7 +18,7 @@ export default function Student() {
   async function deleteData(id) {
     await fetch(`https://63f50ba255677ef68bc8f99d.mockapi.io/Student/${id}`, {
       method: "DELETE",
-      body: null,
+      // body: null,
       headers: {
         "Content-type": "application/json",
       },
