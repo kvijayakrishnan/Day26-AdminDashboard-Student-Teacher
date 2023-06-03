@@ -20,7 +20,7 @@ export default function Student() {
       method: "DELETE",
       body: null,
       headers: {
-        "Content-type": "application/json",
+        "Content-type": "/students",
       },
     });
     toast("Record Deleted", { position: "top-center" });
