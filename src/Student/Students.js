@@ -21,7 +21,7 @@ export default function Student() {
     toast("Record Deleted", { position: "top-center" });
     window.setTimeout(function () {
       window.location.href = window.location.href;
-    },[]);
+    },Student());
   }
   return (
     <>
