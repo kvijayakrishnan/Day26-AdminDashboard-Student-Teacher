@@ -16,18 +16,12 @@ export default function Student() {
   }, []);
 
   async function deleteData(id) {
-    await fetch(`https://63f50ba255677ef68bc8f99d.mockapi.io/Student/${id}`, 
-    {
-      method: "DELETE",
-      // body: null,
-      // headers: {
-      //   "Content-type": "application/json",
-      // },
-    },[])
+    await fetch(`https://63f50ba255677ef68bc8f99d.mockapi.io/Student/${id}`,{method: "DELETE" });
+
     toast("Record Deleted", { position: "top-center" });
     window.setTimeout(function () {
       window.location.href = window.location.href;
-    }, 5000);
+    },[]);
   }
   return (
     <>
