@@ -24,7 +24,7 @@ export default function Teachers(){
             }
           })
           toast('Record Deleted',{position:"top-center"}); 
-          window.setTimeout(function(){window.location.href = window.location.href},5000)
+          window.setTimeout(function(){window.location.href = window.location.href},Teachers)
           
     }
     return <>
