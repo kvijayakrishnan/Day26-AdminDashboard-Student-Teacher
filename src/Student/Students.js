@@ -13,7 +13,7 @@ export default function Student() {
     );
     let userData = await users.json();
     setstudentList([...userData]);
-  }, []);
+  }, useState([]));
 
   async function deleteData(id) {
     await fetch(`https://63f50ba255677ef68bc8f99d.mockapi.io/Student/${id}`,{method: "DELETE" });
