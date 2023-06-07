@@ -13,7 +13,7 @@ export default function Teachers(){
         let userData = await users.json();
         setTeacherList([...userData])
       
-    },[])
+    },Teachers)
 
     async function deleteData(id){
         await fetch(`https://63f50ba255677ef68bc8f99d.mockapi.io/Teacher/${id}`,{
